@@ -1,0 +1,19 @@
+{
+  "name": "tbot-gui",
+  "version": "1.0.0",
+  "description": "Gui for telegram bots aimed to ease a setting process",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-packager . --platform win32 --icon ./icon.ico --out ../tbot-gui-release --overwrite"
+  },
+  "author": "Cr1mzt",
+  "license": "ISC",
+  "dependencies": {
+    "telegraf": "^4.5.2"
+  },
+  "devDependencies": {
+    "electron-packager": "^15.4.0",
+    "electron": "^16.0.5"
+  }
+}

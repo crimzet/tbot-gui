@@ -1,0 +1,457 @@
+/* Custom Title Bar */
+/*
+#Top-bar {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 25px;
+    background-color: rgb(11, 10, 43);
+    -webkit-app-region: drag;
+}
+
+#close {
+    position: fixed;
+    left: 755px;
+    width: 35px;
+    height: 25px;
+    display: flex;
+    background-color: rgb(27, 26, 63);
+    transition: background-color 200ms ease-in-out;
+    -webkit-app-region: no-drag;
+}
+
+#close:hover {
+    background-color: rgb(255, 0, 0)
+}
+
+#close > img {
+    width: 15px;
+    height: 15px;
+    margin: 5px 10px;
+    user-select: none;
+    -webkit-app-region: no-drag;
+}
+
+#minimize {
+    position: fixed;
+    left: 715px;
+    width: 35px;
+    height: 25px;
+    display: flex;
+    background-color: rgb(27, 26, 63);
+    transition: background-color 200ms ease-in-out;
+    -webkit-app-region: no-drag;
+}
+
+#minimize:hover {
+    background-color: rgb(68, 66, 93);
+}
+
+#minimize > img {
+    width: 15px;
+    height: 15px;
+    margin: 5px 10px;
+    user-select: none;
+    -webkit-app-region: no-drag;
+}
+
+*/
+
+/* Header of the Window */
+#Header {
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    top: 0px;
+    left: 0px;
+    background-color: rgb(20, 20, 71);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#Header > * > img {
+    cursor: pointer;
+    user-select: none;
+    -webkit-app-region: no-drag;
+    filter: invert(27%) sepia(8%) saturate(3645%) hue-rotate(203deg) brightness(92%) contrast(86%);
+}
+
+#change-bots {
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    margin: 10px 10px 10px 20px;
+}
+
+#change-bots > img {
+    width: 30px;
+    height: 30px;
+}
+
+#new-command {
+    position: fixed;
+    left: 60px;
+    margin: 10px 10px;
+    width: 30px;
+    height: 30px;
+}
+
+#new-command > img {
+    width: 30px;
+    height: 30px;
+}
+
+#reload {
+    position: fixed;
+    left: 700px;
+    margin: 10px 10px;
+    width: 30px;
+    height: 30px;
+}
+
+#reload > img {
+    width: 30px;
+    height: 30px;
+}
+
+#help {
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    left: 730px;
+    margin: 10px 20px; 
+}
+
+#help > a > img {
+    width: 30px;
+    height: 30px;
+    user-select: none;
+    -webkit-app-region: no-drag;
+    filter: invert(27%) sepia(8%) saturate(3645%) hue-rotate(203deg) brightness(92%) contrast(86%);
+}
+
+#Header > p {
+    font-family:'Times New Roman', Times, serif;
+    font-size: 15px;
+    color: greenyellow;
+}
+
+
+
+/* Main Part of the Window */
+#Main {
+    position: fixed;
+    width: 800px;
+    height: 550px;
+    top: 50px;
+    left: 0px;
+    background-color: rgb(19, 19, 51);
+    display: flex;
+    flex-direction: row;
+}
+
+#Command-box {
+    width: 600px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgb(34, 34, 88);
+}
+
+#Command-box > h3 {
+    margin: 5px;
+    font-family: 'Ubuntu', sans-serif;
+    color: rgb(177, 177, 228);
+}
+
+#command-list {
+    width: 100%;
+    height: 100%;
+}
+
+.command {
+    width: 100%;
+    min-height: 35px;
+    background-color: rgb(41, 41, 105);
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.command-i {
+    width: 240px;
+    word-wrap: break-word;
+    overflow: auto;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-right: 5px;
+    margin-left: 5px;
+    background-color: rgb(95, 95, 167);
+    color: rgb(178, 255, 101);
+}
+
+.responce-i {
+    width: 240px;
+    word-wrap: break-word;
+    overflow: auto;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: rgb(95, 95, 167);
+    color: rgb(208, 255, 122);
+}
+
+.command > .save {
+    width: 60px;
+    height: 25px;
+    background-color: rgb(74, 74, 122);
+    color: rgba(210, 210, 233, 0.431);
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 13px;
+    margin-right: 5px;
+    border: none;
+}
+
+.command > .delete {
+    width: 60px;
+    height: 25px;
+    background-color: rgb(63, 63, 158);
+    color: rgba(210, 210, 233, 0.431);
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 13px;
+    margin-right: 5px;
+    border: none;
+    transition: all 300ms ease-in-out;
+}
+
+.command > .delete:hover {
+    background-color: red;
+    color: white;
+}
+
+#Info-box {
+    position: fixed;
+    top: 50px;
+    left: 800px;
+    width: 200px;
+    height: 530px;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: 6px solid rgba(10, 4, 63, 0.253);
+    background-color: rgba(13, 6, 70, 0.253);
+    transition: all 500ms ease-in-out;
+}
+
+#Info-box.active {
+    left: 600px;
+}
+
+#Info-box.invisible {
+    opacity: 0;
+    visibility: hidden;
+}
+
+#Info-box > button {
+    position: fixed;
+    left: 600px;
+    top: 50px;
+    width: 200px;
+    height: 15px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: small;
+    background-color: rgb(210, 210, 233);
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    transition: all 500ms ease-in-out;
+}
+
+#Info-box > button.active {
+    left: 570px;
+    width: 30px;
+}
+
+#Info-box > p {
+    margin: 10px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
+    color: rgb(210, 210, 233);
+    text-align: left;
+}
+
+#Info-box > h3 {
+    margin: 5px;
+    font-family: 'Ubuntu', sans-serif;
+    color: rgb(210, 210, 233);
+}
+
+#Info-box > p > img {
+    width: 20px;
+    height: 20px;
+    filter: invert(27%) sepia(8%) saturate(3645%) hue-rotate(203deg) brightness(92%) contrast(86%);
+}
+
+#Log-box {
+    position: fixed;
+    top: 50px;
+    left: 800px;
+    width: 200px;
+    height: 530px;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-left: 3px solid rgba(10, 4, 63, 0.253);
+    background-color: rgba(21, 10, 122, 0.253);
+    transition: all 500ms ease-in-out;
+    opacity: 100;
+    visibility: visible;
+}
+
+#Log-box.active {
+    left: 600px;
+}
+
+#Log-box.invisible {
+    opacity: 0;
+    visibility: hidden;
+}
+
+#Log-box > button:first-child {
+    position: fixed;
+    left: 600px;
+    top: 70px;
+    width: 200px;
+    height: 15px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: small;
+    background-color: rgb(210, 210, 233);
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    transition: all 500ms ease-in-out;
+}
+
+#Log-box > button:first-child.active {
+    left: 570px;
+    width: 30px;
+}
+
+#Log-box > h3 {
+    margin: 5px;
+    font-family: 'Ubuntu', sans-serif;
+    color: rgb(210, 210, 233);
+}
+
+#Log-box > div {
+    width: 190px;
+    height: auto;
+    margin: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1px;
+    box-sizing: border-box;
+}
+
+.text {
+    width: 80px;
+    min-height: none;
+    padding: 3px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #f3f3f3;
+    overflow: hidden;
+    margin: 0px;
+    text-align: center;
+    border: 3px solid rgba(0, 0, 255, 0.5);
+}
+
+.text > p {
+    word-wrap: break-word;
+}
+
+/* PopUp Window */
+.refocus {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.411);
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 500ms ease-in-out;
+}
+
+.refocus.active {
+    visibility: visible;
+    opacity: 100;
+}
+
+.popup {
+    width: 300px;
+    height: 150px;
+    background-color: rgb(32, 32, 82);
+    border-radius: 10px;
+    border: 2px solid rgb(69, 69, 134);
+    display: flex;
+    flex-direction: column;
+}
+
+.popup > .one {
+    width: 300px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.one > input {
+    width: 240px;
+    height: 30px;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    font-size: 15px;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: rgb(210, 210, 233);
+}
+
+.popup > .two {
+    width: 300px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+}
+
+.pos-button {
+    width: 150px;
+    height: 50px;
+    border-radius: 0px 0px 0px 10px;
+    border: 2px solid rgb(22, 22, 61);
+    background-color: rgb(42, 42, 114);
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
+}
+.neg-button {
+    width: 150px;
+    height: 50px;
+    border-radius: 0px 0px 10px 0px;
+    border: 2px solid rgb(22, 22, 61);
+    background-color: rgb(42, 42, 114);
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
+}
