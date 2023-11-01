@@ -130,40 +130,6 @@ document.addEventListener('click', (e) => {
             document.getElementById("command-list").removeChild(e.target.parentElement);
         }        
     }
-
-    if (e.target.matches("#Info-box > button")) {
-
-        document.getElementById("Log-box").classList.toggle("invisible");
-
-        if (e.target.classList[0] === "active") {
-            e.target.innerText = "Info";
-            document.getElementById("Log-box").children[0].disabled = false;
-        }
-        if (e.target.classList[0] !== "active") {
-            e.target.innerText = ">>";
-            document.getElementById("Log-box").children[0].disabled = true;
-        }
-        e.target.parentElement.classList.toggle("active");
-        e.target.classList.toggle("active");
-    }
-    if (e.target.matches("#Log-box > button:first-child")) {
-
-        document.getElementById("Info-box").classList.toggle("invisible");
-
-        if (e.target.classList[0] === "active") {
-            e.target.innerText = "Log";
-            document.getElementById("Info-box").children[0].disabled = false;
-        }
-        if (e.target.classList[0] !== "active") {
-            e.target.innerText = ">>";
-            document.getElementById("Info-box").children[0].disabled = true;
-        }
-        e.target.parentElement.classList.toggle("active");
-        e.target.classList.toggle("active");
-
-        console.log(console.errors);
-    }
-
     if (e.target.matches(".pos-button")) {
 
         if (document.getElementsByClassName("refocus")[0].children[0].children[1].children[0] == e.target) {

@@ -107,7 +107,7 @@ export class Bot {
 
         try {
 
-            file = readFileSync("commands.txt", 'utf8').replace('\n', '').split('~');
+            file = readFileSync("./commands.txt", 'utf8').replace('\n', '').split('~');
 
             //console.log(file);
             file.forEach(element => {

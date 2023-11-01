@@ -17,4 +17,18 @@ This project welcomes contributions from the open-source community. Developers, 
 
 # Get Started:
 
-(TODO)
+You can run the program in dev mode using the following commands:
+
+```bash
+git clone https://github.com/crimzet/tbot-gui.git
+cd tbot-gui
+npm start
+```
+
+## Navigation
+
+Here you will find description of each button in addition with their functions:
+
+![Change](./change.svg) - changes your selected Telegram bot. Takes API token, which is unique for every bot. Has to be used first to proceed
+
+![Add](./add.svg) - Adds a new command for the bot. Enter your command (ex. /hello) into the first input field. Enter the responce that the bot will produce into the second input field. After filling all the input fields, press 'save' button to save the command (as it fill not be saved otherwise). Similarly, the command can be deleted via a 'delete' button.

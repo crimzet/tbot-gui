@@ -238,74 +238,10 @@
     color: white;
 }
 
-#Info-box {
-    position: fixed;
-    top: 50px;
-    left: 800px;
-    width: 200px;
-    height: 530px;
-    overflow: auto;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    border: 6px solid rgba(10, 4, 63, 0.253);
-    background-color: rgba(13, 6, 70, 0.253);
-    transition: all 500ms ease-in-out;
-}
-
-#Info-box.active {
-    left: 600px;
-}
-
-#Info-box.invisible {
-    opacity: 0;
-    visibility: hidden;
-}
-
-#Info-box > button {
-    position: fixed;
-    left: 600px;
-    top: 50px;
-    width: 200px;
-    height: 15px;
-    font-family: 'Ubuntu', sans-serif;
-    font-size: small;
-    background-color: rgb(210, 210, 233);
-    outline: none;
-    border: none;
-    border-radius: 2px;
-    transition: all 500ms ease-in-out;
-}
-
-#Info-box > button.active {
-    left: 570px;
-    width: 30px;
-}
-
-#Info-box > p {
-    margin: 10px;
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 15px;
-    color: rgb(210, 210, 233);
-    text-align: left;
-}
-
-#Info-box > h3 {
-    margin: 5px;
-    font-family: 'Ubuntu', sans-serif;
-    color: rgb(210, 210, 233);
-}
-
-#Info-box > p > img {
-    width: 20px;
-    height: 20px;
-    filter: invert(27%) sepia(8%) saturate(3645%) hue-rotate(203deg) brightness(92%) contrast(86%);
-}
-
 #Log-box {
     position: fixed;
     top: 50px;
-    left: 800px;
+    left: 600px;
     width: 200px;
     height: 530px;
     overflow: auto;
@@ -317,35 +253,6 @@
     transition: all 500ms ease-in-out;
     opacity: 100;
     visibility: visible;
-}
-
-#Log-box.active {
-    left: 600px;
-}
-
-#Log-box.invisible {
-    opacity: 0;
-    visibility: hidden;
-}
-
-#Log-box > button:first-child {
-    position: fixed;
-    left: 600px;
-    top: 70px;
-    width: 200px;
-    height: 15px;
-    font-family: 'Ubuntu', sans-serif;
-    font-size: small;
-    background-color: rgb(210, 210, 233);
-    outline: none;
-    border: none;
-    border-radius: 2px;
-    transition: all 500ms ease-in-out;
-}
-
-#Log-box > button:first-child.active {
-    left: 570px;
-    width: 30px;
 }
 
 #Log-box > h3 {
