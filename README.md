@@ -31,4 +31,8 @@ Here you will find description of each button in addition with their functions:
 
 <img src="./change.svg" alt="change" width="50"></img> - changes your selected Telegram bot. Takes API token, which is unique for every bot. Has to be used first to proceed
 
-<img src="./add.svg" alt="add" width="50"></img> - Adds a new command for the bot. Enter your command (ex. /hello) into the first input field. Enter the responce that the bot will produce into the second input field. After filling all the input fields, press 'save' button to save the command (as it fill not be saved otherwise). Similarly, the command can be deleted via a 'delete' button.
+<img src="./add.svg" alt="add" width="50"></img> - Adds a new command for the bot. Enter your command (ex. /hello) into the first input field. Enter the responce that the bot will produce into the second input field. After filling all the input fields, press *'save'* button to save the command (as it fill not be saved otherwise). Similarly, the command can be deleted via a *'delete'* button.
+
+<img src="./help.svg" alt="help" width="50"></img> - Opens an electron *About page*.
+
+<img src="./reload.svg" alt="reload" width="50"></img> - Reloads the app. Note: **The bot token will be reset, and so do its commands!**. Should be used in case any error occurs.
