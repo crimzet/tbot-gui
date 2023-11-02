@@ -122,6 +122,3 @@ export class Bot {
         } catch (error) {console.error(error);}
     }
 }
-
-//Convertible = new Bot("5052375112:AAEgWychWCbZgXhU1kQPiIBckBBITUaDGvQ", "@ConvertibleBot");
-//Convertible.addCommand('/sheesh', "YOU BUZZIN");
