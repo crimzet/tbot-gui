@@ -1,63 +1,6 @@
-/* Custom Title Bar */
-/*
-#Top-bar {
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 25px;
-    background-color: rgb(11, 10, 43);
-    -webkit-app-region: drag;
+* {
+    font-family: 'Ubuntu', sans-serif;
 }
-
-#close {
-    position: fixed;
-    left: 755px;
-    width: 35px;
-    height: 25px;
-    display: flex;
-    background-color: rgb(27, 26, 63);
-    transition: background-color 200ms ease-in-out;
-    -webkit-app-region: no-drag;
-}
-
-#close:hover {
-    background-color: rgb(255, 0, 0)
-}
-
-#close > img {
-    width: 15px;
-    height: 15px;
-    margin: 5px 10px;
-    user-select: none;
-    -webkit-app-region: no-drag;
-}
-
-#minimize {
-    position: fixed;
-    left: 715px;
-    width: 35px;
-    height: 25px;
-    display: flex;
-    background-color: rgb(27, 26, 63);
-    transition: background-color 200ms ease-in-out;
-    -webkit-app-region: no-drag;
-}
-
-#minimize:hover {
-    background-color: rgb(68, 66, 93);
-}
-
-#minimize > img {
-    width: 15px;
-    height: 15px;
-    margin: 5px 10px;
-    user-select: none;
-    -webkit-app-region: no-drag;
-}
-
-*/
-
 /* Header of the Window */
 #Header {
     position: fixed;
@@ -65,7 +8,7 @@
     height: 50px;
     top: 0px;
     left: 0px;
-    background-color: rgb(20, 20, 71);
+    background-color: rgb(50, 130, 210);
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -133,9 +76,8 @@
 }
 
 #Header > p {
-    font-family:'Times New Roman', Times, serif;
-    font-size: 15px;
-    color: greenyellow;
+    font-size: 20px;
+    color: white;
 }
 
 
@@ -147,7 +89,7 @@
     height: 550px;
     top: 50px;
     left: 0px;
-    background-color: rgb(19, 19, 51);
+    background-color: rgb(166, 201, 157);
     display: flex;
     flex-direction: row;
 }
@@ -158,13 +100,11 @@
     display: flex;
     flex-direction: column;
     text-align: center;
-    background-color: rgb(34, 34, 88);
 }
 
 #Command-box > h3 {
     margin: 5px;
-    font-family: 'Ubuntu', sans-serif;
-    color: rgb(177, 177, 228);
+    color: white;
 }
 
 #command-list {
@@ -175,8 +115,8 @@
 .command {
     width: 100%;
     min-height: 35px;
-    background-color: rgb(41, 41, 105);
-    margin-top: 5px;
+    background-color: whitesmoke;
+    border: 1px solid lightgray;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -187,13 +127,11 @@
     word-wrap: break-word;
     overflow: auto;
     outline: none;
-    border: none;
+    border: 1px solid lightgray;
     font-size: 15px;
-    font-family: 'Courier New', Courier, monospace;
-    margin-right: 5px;
-    margin-left: 5px;
-    background-color: rgb(95, 95, 167);
-    color: rgb(178, 255, 101);
+    margin-right: 10px;
+    margin-left: 10px;
+    color: black;
 }
 
 .responce-i {
@@ -201,21 +139,18 @@
     word-wrap: break-word;
     overflow: auto;
     outline: none;
-    border: none;
+    border: 1px solid lightgray;
     font-size: 15px;
-    font-family: 'Courier New', Courier, monospace;
     margin-left: 5px;
     margin-right: 5px;
-    background-color: rgb(95, 95, 167);
-    color: rgb(208, 255, 122);
+    color: black;
 }
 
 .command > .save {
     width: 60px;
     height: 25px;
-    background-color: rgb(74, 74, 122);
-    color: rgba(210, 210, 233, 0.431);
-    font-family: 'Ubuntu', sans-serif;
+    background-color: #e3e3e3;
+    color: rgb(180, 180, 200);
     font-size: 13px;
     margin-right: 5px;
     border: none;
@@ -224,9 +159,8 @@
 .command > .delete {
     width: 60px;
     height: 25px;
-    background-color: rgb(63, 63, 158);
-    color: rgba(210, 210, 233, 0.431);
-    font-family: 'Ubuntu', sans-serif;
+    background-color: #e3e3e3;
+    color: rgb(180, 180, 200);
     font-size: 13px;
     margin-right: 5px;
     border: none;
@@ -248,8 +182,8 @@
     display: flex;
     flex-direction: column;
     text-align: center;
-    border-left: 3px solid rgba(10, 4, 63, 0.253);
-    background-color: rgba(21, 10, 122, 0.253);
+    border-left: 1px solid rgba(10, 10, 10, 0.253);
+    background-color: rgba(50, 50, 50, 0.253);
     transition: all 500ms ease-in-out;
     opacity: 100;
     visibility: visible;
@@ -257,33 +191,26 @@
 
 #Log-box > h3 {
     margin: 5px;
-    font-family: 'Ubuntu', sans-serif;
     color: rgb(210, 210, 233);
 }
 
 #Log-box > div {
-    width: 190px;
+    width: fill;
     height: auto;
     margin: 5px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 1px;
-    box-sizing: border-box;
 }
 
 .text {
-    width: 80px;
-    min-height: none;
-    padding: 3px;
-    background-color: rgba(255, 255, 255, 0.2);
-    color: #f3f3f3;
+    background-color: white;
+    color: black;
     overflow: hidden;
-    margin: 0px;
-    text-align: center;
-    border: 3px solid rgba(0, 0, 255, 0.5);
+    text-align: left;
+    padding: 1px;
+    border-radius: 5px;
 }
 
 .text > p {
+    font-size: 13px;
     word-wrap: break-word;
 }
 
@@ -311,9 +238,7 @@
 .popup {
     width: 300px;
     height: 150px;
-    background-color: rgb(32, 32, 82);
-    border-radius: 10px;
-    border: 2px solid rgb(69, 69, 134);
+    background-color: white;
     display: flex;
     flex-direction: column;
 }
@@ -330,11 +255,10 @@
     width: 240px;
     height: 30px;
     outline: none;
-    border-radius: 5px;
     border: none;
+    background-color: whitesmoke;
     font-size: 15px;
-    font-family: 'Ubuntu', sans-serif;
-    background-color: rgb(210, 210, 233);
+    color: darkgray;
 }
 
 .popup > .two {
@@ -347,18 +271,14 @@
 .pos-button {
     width: 150px;
     height: 50px;
-    border-radius: 0px 0px 0px 10px;
-    border: 2px solid rgb(22, 22, 61);
-    background-color: rgb(42, 42, 114);
-    font-family: 'Ubuntu', sans-serif;
+    border: 1px solid lightgray;
+    background-color: white;
     font-size: 15px;
 }
 .neg-button {
     width: 150px;
     height: 50px;
-    border-radius: 0px 0px 10px 0px;
-    border: 2px solid rgb(22, 22, 61);
-    background-color: rgb(42, 42, 114);
-    font-family: 'Ubuntu', sans-serif;
+    border: 1px solid lightgray;
+    background-color: white;
     font-size: 15px;
 }

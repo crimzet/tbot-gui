@@ -24,10 +24,9 @@ export class Bot {
         });
 
         this.bot.on('message', (ctx) => {
-            //ctx.reply(ctx.message.text.split(' '));
-            //console.log(ctx.message.from.username + "~text~" + ctx.message.text);
-            console.log("@" + ctx.message.from.username + "\n(" + ctx.message.from.first_name + ")");
-            console.log(ctx.message.text);
+            console.log("@" + ctx.message.from.username + " : " + ctx.message.text);
+            //console.log("@" + ctx.message.from.username + "\n(" + ctx.message.from.first_name + ")");
+            //console.log(ctx.message.text);
             const index = this.cmds.indexOf(ctx.message.text.split(' ')[0]);
             if (index !== -1) {
                 if (this.reps[index][0] + this.reps[index][1] + this.reps[index][2] === 'vid')
